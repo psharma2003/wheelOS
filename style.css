@@ -1,26 +1,44 @@
+/* Resetting default margin and padding */
 body {
     margin: 0;
-    padding: 0 50px; /* Adjust the padding-left value to move the container away from the left side */
+    padding: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Styling the gradient background  #a3f3ffbe */
+.gradient-background {
+    background-color: #dbdbdb;
+    color: black;
+    min-height: 100vh;
+}
+/* Styling the welcome message */
+.welcome-message {
+    font-size: 66px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* Styling the header section */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: white;
 }
 
+/* Styling the logo */
 .logo {
-    width: 100px; /* Adjust as needed */
+    width: 150px;
     height: auto;
 }
 
+/* Styling the register button in the header */
 .register-btn {
-    padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 18px;
     background-color: #3791af;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     border: none;
     border-radius: 5px;
@@ -31,15 +49,21 @@ body {
     background-color: #26667b;
 }
 
-.login-btn {
-    padding: 10px 20px;
-    background-color: #c9a3ff;
+/* Styling the login and register buttons in the container */
+.login-btn, .register-btn-container {
+    padding: 20px 40px;
+    font-size: 24px;
+    background-color: #ffffff;
     color: white;
     text-decoration: none;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
-    margin-right: 10px;
+    margin-right: 20px; /* Creating space between buttons */
+}
+
+.login-btn {
+    background-color: #c9a3ff;
 }
 
 .login-btn:hover {
@@ -47,43 +71,38 @@ body {
 }
 
 .register-btn-container {
-    padding: 10px 20px;
     background-color: #41a9cc;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+    margin-right: 0; /* Removing margin-right for the last button */
 }
 
 .register-btn-container:hover {
     background-color: #32758c;
 }
 
+/* Styling the container section */
 .container {
-    text-align: left;
+    text-align: center;
     margin-top: 100px;
-    margin-left: 100px;
 }
 
 .container img {
-    width: 400px; /* Adjust as needed */
+    width: 600px;
     height: auto;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .content {
-    max-width: 600px; /* Adjust as needed */
-    margin-top: 0;
-    clear: left; /* Clear the float */
-}
-
-.content p {
-    margin-bottom: 20px;
+    margin-bottom: 60px; /* Increase margin-bottom to create more gap after the content */
+    max-width: 700px; /* Set maximum width for the content paragraph */
+    margin: 0 auto; /* Center the content horizontally */
 }
 
 .btn-container {
-    margin-top: 20px;
+    margin-top: 40px; /* Adjusting margin-top to provide space between content and buttons */
 }
+
